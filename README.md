@@ -1,0 +1,1 @@
+# Armco Template for the tech stack: React, TS, Dart Sass, Redux Tookkit, react-redux, react browser routing, TS based plop generator
