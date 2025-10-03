@@ -1,0 +1,17 @@
+.c-Home {
+  .main-panel {
+    transition: width 0.3s ease-in-out;
+  }
+  .login-panel {
+    transition: max-width 0.3s ease-in-out;
+    max-width: 0;
+
+    &.active {
+      max-width: 25rem;
+    }
+  }
+
+  .w-0 {
+    width: 0;
+  }
+}

@@ -1,26 +1,45 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
     "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "baseUrl": ".",
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "outDir": "build",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "target": "es5",
+    "paths": {
+      "@app-types": ["src/types"],
+      "@app-types/*": ["src/types/*"],
+      "@components/*": ["src/components/*"],
+      "@components": ["src/components"],
+      "@pages/*": ["src/pages/*"],
+      "@pages": ["src/pages"],
+      "@services/*": ["src/services/*"],
+      "@services": ["src/services"],
+      "@config/*": ["src/config/*"],
+      "@utils/*": ["src/utils/*"],
+      "@utils": ["src/utils"],
+      "@hooks": ["src/hooks"],
+      "@hooks/*": ["src/hooks/*"],
+      "@contexts": ["src/contexts"],
+      "@contexts/*": ["src/contexts/*"],
+    }
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src", "Date", "build"],
+  "exclude": ["build", "plop-templates", "node_modules", "src/**/*.test.*", "src/**/*.spec.*", "src/stories", "scripts"]
 }
